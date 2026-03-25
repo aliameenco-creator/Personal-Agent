@@ -42,8 +42,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
     setLoading(true);
     try {
       const [promptData, feedbackData] = await Promise.all([
-        apiGet<{ prompts: SystemPrompt[] }>('prompts/list'),
-        apiGet<{ feedback: FeedbackEntry[] }>('feedback/list?limit=100'),
+        apiGet<{ prompts: SystemPrompt[] }>('prompts'),
+        apiGet<{ feedback: FeedbackEntry[] }>('feedback?limit=100'),
       ]);
       setPrompts(promptData.prompts);
       setFeedback(feedbackData.feedback);
@@ -58,7 +58,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBack }) => {
     const content = editContent[prompt.id] ?? prompt.content;
     setSaving(prompt.id);
     try {
-      await apiPost('prompts/update', { id: prompt.id, content });
+      await apiPost('prompts', { id: prompt.id, content });
       setPrompts(prev => prev.map(p => p.id === prompt.id ? { ...p, content, updated_at: new Date().toISOString() } : p));
       setExpandedPrompt(null);
     } catch (err: any) {

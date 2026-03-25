@@ -8,5 +8,5 @@ export async function submitFeedback(params: {
   comment?: string;
   metadata?: Record<string, any>;
 }): Promise<void> {
-  await apiPost('feedback/submit', params);
+  await apiPost('feedback', params);
 }

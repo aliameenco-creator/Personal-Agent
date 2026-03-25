@@ -1,7 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { HarmCategory, HarmBlockThreshold } from '@google/genai';
-import { getGeminiClient } from '../_lib/gemini';
-import { verifyAuth } from '../_lib/auth';
+import { getGeminiClient, verifyAuth } from '../_shared';
 
 export const config = { maxDuration: 60 };
 

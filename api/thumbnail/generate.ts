@@ -1,7 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { getGeminiClient } from '../_lib/gemini';
-import { verifyAuth } from '../_lib/auth';
-import { getPrompt } from '../_lib/prompts';
+import { getGeminiClient, verifyAuth, getPrompt } from '../_shared';
 
 export const config = { maxDuration: 60 };
 

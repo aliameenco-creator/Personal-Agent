@@ -324,7 +324,7 @@ export const ThumbnailPage: React.FC<ThumbnailPageProps> = ({ onToggleSidebar })
                         onChange={(e) => setPrompt(e.target.value)}
                         placeholder="Describe your thumbnail. E.g., 'Shocking reaction to new tech gadget, high contrast, bold text saying REVIEW'..."
                         rows={4}
-                        className="w-full px-4 py-3 text-sm rounded-xl focus:ring-2 focus:ring-brand-primary bg-brand-surface-container-low text-brand-on-surface placeholder-brand-on-surface-variant/50 font-medium transition-all resize-none pr-14 border-none outline-none"
+                        className="w-full px-4 py-3 text-sm rounded-xl focus:ring-2 focus:ring-brand-primary bg-brand-surface-container-low text-brand-on-surface placeholder:text-brand-on-surface-variant/50 font-medium transition-all resize-none pr-14 border-none outline-none"
                       />
                       <div className="absolute bottom-3 right-3">
                         <ThumbnailAudioRecorder
@@ -433,7 +433,7 @@ export const ThumbnailPage: React.FC<ThumbnailPageProps> = ({ onToggleSidebar })
                       onChange={(e) => setExistingEditPrompt(e.target.value)}
                       placeholder="Describe the changes you want. E.g., 'Add this logo to the top-left', 'Replace the background with the attached image', 'Make the text bigger and bolder'..."
                       rows={4}
-                      className="w-full px-4 py-3 text-sm rounded-xl focus:ring-2 focus:ring-brand-primary bg-brand-surface-container-low text-brand-on-surface placeholder-brand-on-surface-variant/50 font-medium transition-all resize-none border-none outline-none"
+                      className="w-full px-4 py-3 text-sm rounded-xl focus:ring-2 focus:ring-brand-primary bg-brand-surface-container-low text-brand-on-surface placeholder:text-brand-on-surface-variant/50 font-medium transition-all resize-none border-none outline-none"
                     />
 
                     {/* Attachments */}
@@ -605,7 +605,7 @@ export const ThumbnailPage: React.FC<ThumbnailPageProps> = ({ onToggleSidebar })
                           onKeyDown={(e) => { if (e.key === 'Enter' && !isEditing) handleEdit(); }}
                           placeholder="Refine this thumbnail... attach images + describe changes"
                           disabled={isEditing}
-                          className="w-full px-3 py-2 text-sm rounded-lg focus:ring-2 focus:ring-brand-primary bg-brand-surface-container-low text-brand-on-surface placeholder-brand-on-surface-variant/50 font-medium pr-10 disabled:opacity-50 border-none outline-none"
+                          className="w-full px-3 py-2 text-sm rounded-lg focus:ring-2 focus:ring-brand-primary bg-brand-surface-container-low text-brand-on-surface placeholder:text-brand-on-surface-variant/50 font-medium pr-10 disabled:opacity-50 border-none outline-none"
                         />
                         <button
                           onClick={handleEdit}

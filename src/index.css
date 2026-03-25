@@ -92,6 +92,20 @@ body {
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
 }
 
+/* Form elements on dark backgrounds */
+select option {
+  background: #1E1E1E;
+  color: #E8E0D8;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #E8E0D8;
+  -webkit-box-shadow: 0 0 0px 1000px #2A2A2A inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 /* Selection */
 ::selection {
   background: rgba(255, 73, 0, 0.25);

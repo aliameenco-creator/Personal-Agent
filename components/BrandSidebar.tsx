@@ -77,7 +77,7 @@ export const BrandSidebar: React.FC<BrandSidebarProps> = ({ assets, setAssets, i
                 value={assets.brandName || ''}
                 onChange={(e) => updateAsset('brandName', e.target.value)}
                 placeholder="e.g. Acme Corp"
-                className="w-full px-3 sm:px-4 py-2.5 sm:py-3 text-sm rounded-lg sm:rounded-xl bg-brand-surface-container-low focus:ring-2 focus:ring-brand-primary focus:bg-brand-surface-container text-brand-on-surface placeholder-brand-on-surface-variant/50 font-medium transition-all border-none outline-none"
+                className="w-full px-3 sm:px-4 py-2.5 sm:py-3 text-sm rounded-lg sm:rounded-xl bg-brand-surface-container-low focus:ring-2 focus:ring-brand-primary focus:bg-brand-surface-container text-brand-on-surface placeholder:text-brand-on-surface-variant/50 font-medium transition-all border-none outline-none"
               />
               <p className="text-[11px] sm:text-xs text-brand-on-surface-variant mt-2">Used to replace other brand names.</p>
             </div>

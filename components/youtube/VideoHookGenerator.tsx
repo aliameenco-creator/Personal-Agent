@@ -54,7 +54,7 @@ export const VideoHookGenerator: React.FC<VideoHookGeneratorProps> = ({
           value={srtText}
           onChange={e => onSrtChange(e.target.value)}
           placeholder={`Paste your SRT script here. Example:\n\n1\n00:00:00,000 --> 00:00:04,000\nEver wondered why 90% of startups fail?\n\n2\n00:00:04,000 --> 00:00:08,000\nThe answer might surprise you...`}
-          className="w-full px-5 py-4 bg-brand-surface-container-high border-2 border-brand-outline-variant rounded-2xl focus:ring-2 focus:ring-brand-primary focus:border-brand-primary text-brand-on-surface placeholder-brand-outline-variant resize-y min-h-[160px] h-48 text-sm font-mono"
+          className="w-full px-5 py-4 bg-brand-surface-container-high border-2 border-brand-outline-variant rounded-2xl focus:ring-2 focus:ring-brand-primary focus:border-brand-primary text-brand-on-surface placeholder:text-brand-on-surface-variant resize-y min-h-[160px] h-48 text-sm font-mono"
         />
 
         <div className="flex items-center gap-3">

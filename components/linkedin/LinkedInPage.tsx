@@ -72,7 +72,7 @@ export const LinkedInPage: React.FC<LinkedInPageProps> = ({ onToggleSidebar }) =
       {/* Main Content */}
       <div className="flex-1 flex flex-col overflow-hidden">
         {/* Toolbar */}
-        <div className="flex-shrink-0 px-4 sm:px-8 py-3 border-b border-brand-surface-container bg-white/50 flex items-center justify-between">
+        <div className="flex-shrink-0 px-4 sm:px-8 py-3 border-b border-brand-surface-container bg-brand-surface-container-high/50 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <button onClick={onToggleSidebar} className="lg:hidden p-2 rounded-xl hover:bg-brand-surface-container-high text-brand-primary transition-colors">
               <Menu size={20} />

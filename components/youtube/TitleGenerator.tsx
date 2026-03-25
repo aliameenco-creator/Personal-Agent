@@ -53,7 +53,7 @@ export const TitleGenerator: React.FC<TitleGeneratorProps> = ({
             value={videoTopic}
             onChange={e => onTopicChange(e.target.value)}
             placeholder="Describe your video topic, e.g. 'How to grow a YouTube channel from 0 to 10K subscribers in 2026'..."
-            className="w-full px-5 py-4 pr-20 bg-brand-surface-container-high border-2 border-brand-outline-variant rounded-2xl focus:ring-2 focus:ring-brand-primary focus:border-brand-primary text-brand-on-surface placeholder-brand-outline-variant resize-none h-24 transition-all font-medium"
+            className="w-full px-5 py-4 pr-20 bg-brand-surface-container-high border-2 border-brand-outline-variant rounded-2xl focus:ring-2 focus:ring-brand-primary focus:border-brand-primary text-brand-on-surface placeholder:text-brand-on-surface-variant resize-none h-24 transition-all font-medium"
             onKeyDown={e => {
               if (e.key === 'Enter' && !e.shiftKey && videoTopic.trim()) {
                 e.preventDefault();

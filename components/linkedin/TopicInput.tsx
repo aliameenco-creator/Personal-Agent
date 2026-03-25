@@ -52,7 +52,7 @@ export const TopicInput: React.FC<TopicInputProps> = ({ topic, onTopicChange, re
           onChange={e => onTopicChange(e.target.value)}
           placeholder="e.g. 5 productivity tips for remote workers, or a thought leadership piece about AI in marketing..."
           rows={3}
-          className="w-full px-4 py-3 text-sm border-2 border-brand-outline-variant rounded-xl focus:ring-2 focus:ring-brand-primary focus:border-brand-primary bg-brand-surface-container-highest text-brand-on-surface placeholder-brand-outline-variant font-medium transition-all resize-none"
+          className="w-full px-4 py-3 text-sm border-2 border-brand-outline-variant rounded-xl focus:ring-2 focus:ring-brand-primary focus:border-brand-primary bg-brand-surface-container-highest text-brand-on-surface placeholder:text-brand-on-surface-variant font-medium transition-all resize-none"
         />
       </div>
 

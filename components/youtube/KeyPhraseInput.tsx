@@ -60,7 +60,7 @@ export const KeyPhraseInput: React.FC<KeyPhraseInputProps> = ({ keyPhrases, onAd
           onChange={e => setInputText(e.target.value)}
           onKeyDown={handleKeyDown}
           placeholder="Paste key phrases here (one per line or comma-separated)..."
-          className="flex-1 px-4 py-3 bg-brand-surface-container-high border-2 border-brand-outline-variant rounded-xl focus:ring-2 focus:ring-brand-primary focus:border-brand-primary text-brand-on-surface placeholder-brand-outline-variant resize-none h-20 text-sm font-medium"
+          className="flex-1 px-4 py-3 bg-brand-surface-container-high border-2 border-brand-outline-variant rounded-xl focus:ring-2 focus:ring-brand-primary focus:border-brand-primary text-brand-on-surface placeholder:text-brand-on-surface-variant resize-none h-20 text-sm font-medium"
         />
         <button
           onClick={handleAddPhrases}

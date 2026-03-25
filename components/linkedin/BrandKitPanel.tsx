@@ -50,7 +50,7 @@ export const BrandKitPanel: React.FC<BrandKitPanelProps> = ({ brandKit, onChange
           </button>
         </div>
 
-        <div className="p-4 sm:p-6 space-y-5 flex-1 bg-gradient-to-b from-white to-brand-surface-container-high/30">
+        <div className="p-4 sm:p-6 space-y-5 flex-1 bg-brand-surface-container-highest">
 
           {/* Identity */}
           <div className="space-y-3">
@@ -65,7 +65,7 @@ export const BrandKitPanel: React.FC<BrandKitPanelProps> = ({ brandKit, onChange
                 </label>
                 <input type="text" value={brandKit.brandName} onChange={e => update('brandName', e.target.value)}
                   placeholder="e.g. Acme Corp"
-                  className="w-full px-3 py-2.5 text-sm border-2 border-brand-outline-variant rounded-lg focus:ring-2 focus:ring-brand-primary focus:border-brand-primary bg-brand-surface-container-highest text-brand-on-surface placeholder-brand-outline-variant font-medium transition-all" />
+                  className="w-full px-3 py-2.5 text-sm border-2 border-brand-outline-variant rounded-lg focus:ring-2 focus:ring-brand-primary focus:border-brand-primary bg-brand-surface-container-highest text-brand-on-surface placeholder:text-brand-on-surface-variant font-medium transition-all" />
               </div>
               <div>
                 <label className="block text-sm text-brand-on-surface font-semibold mb-1.5 flex items-center gap-2">
@@ -73,7 +73,7 @@ export const BrandKitPanel: React.FC<BrandKitPanelProps> = ({ brandKit, onChange
                 </label>
                 <input type="text" value={brandKit.tagline} onChange={e => update('tagline', e.target.value)}
                   placeholder="e.g. Innovation meets design"
-                  className="w-full px-3 py-2.5 text-sm border-2 border-brand-outline-variant rounded-lg focus:ring-2 focus:ring-brand-primary focus:border-brand-primary bg-brand-surface-container-highest text-brand-on-surface placeholder-brand-outline-variant font-medium transition-all" />
+                  className="w-full px-3 py-2.5 text-sm border-2 border-brand-outline-variant rounded-lg focus:ring-2 focus:ring-brand-primary focus:border-brand-primary bg-brand-surface-container-highest text-brand-on-surface placeholder:text-brand-on-surface-variant font-medium transition-all" />
               </div>
               <div>
                 <label className="block text-sm text-brand-on-surface font-semibold mb-1.5 flex items-center gap-2">
@@ -81,7 +81,7 @@ export const BrandKitPanel: React.FC<BrandKitPanelProps> = ({ brandKit, onChange
                 </label>
                 <input type="text" value={brandKit.socialHandle} onChange={e => update('socialHandle', e.target.value)}
                   placeholder="e.g. @acmecorp"
-                  className="w-full px-3 py-2.5 text-sm border-2 border-brand-outline-variant rounded-lg focus:ring-2 focus:ring-brand-primary focus:border-brand-primary bg-brand-surface-container-highest text-brand-on-surface placeholder-brand-outline-variant font-medium transition-all" />
+                  className="w-full px-3 py-2.5 text-sm border-2 border-brand-outline-variant rounded-lg focus:ring-2 focus:ring-brand-primary focus:border-brand-primary bg-brand-surface-container-highest text-brand-on-surface placeholder:text-brand-on-surface-variant font-medium transition-all" />
               </div>
               <div>
                 <label className="block text-sm text-brand-on-surface font-semibold mb-1.5 flex items-center gap-2">

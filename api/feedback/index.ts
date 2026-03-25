@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { createClient } from '@supabase/supabase-js';
-import { verifyAuth } from '../_shared';
+import { verifyAuth } from '../_shared.js';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   const userId = await verifyAuth(req, res);

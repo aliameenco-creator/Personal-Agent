@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { getGeminiClient, verifyAuth } from '../_shared';
+import { getGeminiClient, verifyAuth } from '../_shared.js';
 
 export const config = { maxDuration: 30 };
 

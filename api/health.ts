@@ -29,7 +29,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   // Step 4: Test _shared import
   try {
-    const shared = await import('./_shared');
+    const shared = await import('./_shared.js');
     checks.shared_import = 'ok';
     checks.shared_exports = Object.keys(shared).join(', ');
   } catch (e: any) {

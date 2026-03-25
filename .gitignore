@@ -32,3 +32,5 @@ thumbnail generator/
 
 # Windows artifacts
 nul
+
+.vercel

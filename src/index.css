@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Inter', sans-serif;
+  --font-accent: 'Space Grotesk', sans-serif;
+
+  --color-brand-primary: #FF4900;
+  --color-brand-primary-container: #C23600;
+  --color-brand-secondary: #212121;
+  --color-brand-tertiary: #00B092;
+  --color-brand-neutral: #0D0D0D;
+  --color-brand-surface: #111111;
+  --color-brand-surface-dim: #0D0D0D;
+  --color-brand-surface-container-lowest: #0A0A0A;
+  --color-brand-surface-container-low: #1A1A1A;
+  --color-brand-surface-container: #1E1E1E;
+  --color-brand-surface-container-high: #252525;
+  --color-brand-surface-container-highest: #2A2A2A;
+  --color-brand-on-surface: #E8E0D8;
+  --color-brand-on-surface-variant: #9A9A9A;
+  --color-brand-on-primary: #FFFFFF;
+  --color-brand-outline-variant: #333333;
+}
+
+/* Base styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background: #111111;
+  background-attachment: fixed;
+  color: #E8E0D8;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1A1A1A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 10px;
+  border: 2px solid #1A1A1A;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF4900;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #FF4900 0%, #C23600 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Animated gradient border */
+@keyframes gradient-rotate {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-rotate 3s ease infinite;
+}
+
+/* Card styles - dark surface shifts + subtle glow */
+.card-bright {
+  background: #1E1E1E;
+  border: none;
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.card-bright:hover {
+  background: #252525;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Selection */
+::selection {
+  background: rgba(255, 73, 0, 0.25);
+  color: #FFFFFF;
+}

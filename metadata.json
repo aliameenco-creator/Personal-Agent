@@ -1,0 +1,5 @@
+{
+  "name": "Personal Agent",
+  "description": "Intelligently rebrand social media posts and images using your own logos and color schemes with Gemini 3 Pro Image.",
+  "requestFramePermissions": []
+}

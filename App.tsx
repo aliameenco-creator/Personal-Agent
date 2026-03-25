@@ -26,6 +26,10 @@ const App: React.FC = () => {
       .single()
       .then(({ data }) => {
         setIsAdmin(data?.role === 'admin');
+      })
+      .catch(() => {
+        // Profile may not exist yet — silently ignore
+        setIsAdmin(false);
       });
   }, [user]);
 

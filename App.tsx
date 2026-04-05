@@ -4,6 +4,7 @@ import { RebrandPage } from './pages/RebrandPage';
 import { YouTubePage } from './components/youtube/YouTubePage';
 import { LinkedInPage } from './components/linkedin/LinkedInPage';
 import { ThumbnailPage } from './components/thumbnails/ThumbnailPage';
+import { LinkedInBusterPage } from './components/svgCarousel/LinkedInBusterPage';
 import { AuthPage } from './components/auth/AuthPage';
 import { AdminDashboard } from './components/admin/AdminDashboard';
 import { useAuth } from './hooks/useAuth';
@@ -79,6 +80,8 @@ const App: React.FC = () => {
           <YouTubePage />
         ) : activeTab === 'linkedin' ? (
           <LinkedInPage onToggleSidebar={() => setSidebarOpen(prev => !prev)} />
+        ) : activeTab === 'svg-carousel' ? (
+          <LinkedInBusterPage onToggleSidebar={() => setSidebarOpen(prev => !prev)} />
         ) : (
           <ThumbnailPage onToggleSidebar={() => setSidebarOpen(prev => !prev)} />
         )}

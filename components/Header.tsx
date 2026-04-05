@@ -1,7 +1,7 @@
 import React from 'react';
 import { Zap, Menu, Settings, LogOut } from 'lucide-react';
 
-export type AppTab = 'rebrand' | 'youtube' | 'linkedin' | 'thumbnails';
+export type AppTab = 'rebrand' | 'youtube' | 'linkedin' | 'svg-carousel' | 'thumbnails';
 
 interface HeaderProps {
   onToggleSidebar?: () => void;
@@ -96,6 +96,16 @@ export const Header: React.FC<HeaderProps> = ({ onToggleSidebar, activeTab, onTa
           }`}
         >
           LinkedIn Studio
+        </button>
+        <button
+          onClick={() => onTabChange('svg-carousel')}
+          className={`px-4 sm:px-6 py-2.5 text-sm font-semibold rounded-t-xl transition-all relative ${
+            activeTab === 'svg-carousel'
+              ? 'text-brand-primary bg-brand-surface-container-highest -mb-px z-10'
+              : 'text-brand-on-surface-variant hover:text-brand-primary hover:bg-brand-surface-container-high'
+          }`}
+        >
+          LinkedIn Buster
         </button>
         <button
           onClick={() => onTabChange('thumbnails')}
